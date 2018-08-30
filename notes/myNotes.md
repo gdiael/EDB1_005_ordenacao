@@ -1,0 +1,3 @@
+# Minhas anotações
+## Notas e lembretes decorrentes do exercício de implementação dos algoritmos
+Ainda em construção...
