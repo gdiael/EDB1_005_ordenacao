@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
     // inicio da medição
     auto start = std::chrono::high_resolution_clock::now();
     
-    sort(v, size);
+    sort(v, size, sortType);
     
     // fim da medição
     auto end = std::chrono::high_resolution_clock::now();

@@ -2,18 +2,28 @@
 
 void selectionSort(int v[], int size)
 {
-
-};
+    for(int i = 0; i < size; i++){
+        int min = i;
+        for(int j = i+1; j < size; j++){
+            if(v[j] < v[min]){
+                min = j;
+            };
+        };
+        if(min != i){
+            swap(v[min], v[i]);
+        };
+    };
+}
 
 void insertionSort(int v[], int size)
 {
 
-};
+}
 
 void bubbleSort(int v[], int size)
 {
 
-};
+}
 
 void mergeSort_merge(int v[], int start1, int start2, int end2)
 {
@@ -27,7 +37,7 @@ void mergeSort_merge(int v[], int start1, int start2, int end2)
 
         };
     };
-};
+}
 
 void mergeSort_divide(int v[], int start, int end)
 {
@@ -38,17 +48,17 @@ void mergeSort_divide(int v[], int start, int end)
         mergeSort_divide(v, mid+1, end);
         mergeSort_merge(v, start, mid+1, end);
     };
-};
+}
 
 void mergeSort(int v[], int size)
 {
     mergeSort_divide(v, 0, size - 1);
-};
+}
 
 void quickSort(int v[], int size)
 {
 
-};
+}
 
 void sort(int v[], int size, int sortType)
 {
@@ -64,8 +74,4 @@ void sort(int v[], int size, int sortType)
         case 5:
         quickSort(v, size);
     };
-    
-    
-    
-    
-};
+}
