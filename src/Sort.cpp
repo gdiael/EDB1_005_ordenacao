@@ -32,12 +32,29 @@ void mergeSort_merge(int v[], int start1, int start2, int end2)
     int end1 = start2-1, i = start1, j = start2, k = 0;
     int size = end2 - start1 + 1;
     int* tmp = new int[size];
-    while ( i < end1 && j < end2)
+    while (i <= end1 && j <= end2)
     {
         if ( v[i] < v[j] )
         {
-
+            tmp[k] = v[i++];
+        }else{
+            tmp[k] = v[j++];
         };
+        k += 1;
+    };
+    while ( i <= end1 )
+    {
+        tmp[k++] = v[i++];
+    };
+    while ( j <= end2 )
+    {
+        tmp[k++] = v[j++];
+    };
+    k = 0;
+    while (k < size)
+    {
+        v[start1 + k] = tmp[k];
+        k++;
     };
 }
 

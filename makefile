@@ -45,7 +45,7 @@ clean:
 	rm -f $(OBJ)/*
 
 run:
-	$(PROG1) ./res/input.txt 50000 1
+	$(PROG1) ./res/input.txt 50000 4
 
 debug: db$(PROG1)
 	gdb $(PROG1)
