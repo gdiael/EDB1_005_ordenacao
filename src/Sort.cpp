@@ -1,4 +1,6 @@
+#include <iostream>
 #include "Sort.hpp"
+using namespace std;
 
 void selectionSort(int v[], int size)
 {
@@ -64,14 +66,19 @@ void sort(int v[], int size, int sortType)
 {
     switch(sortType){
         case 1:
-        selectionSort(v, size);
+            selectionSort(v, size);
+            break;
         case 2:
-        insertionSort(v, size);
+            insertionSort(v, size);
+            break;
         case 3:
-        bubbleSort(v, size);
+            bubbleSort(v, size);
+            break;
         case 4:
-        mergeSort(v, size);
+            mergeSort(v, size);
+            break;
         case 5:
-        quickSort(v, size);
+            quickSort(v, size);
+            break;
     };
 }
